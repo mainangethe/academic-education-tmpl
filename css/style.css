@@ -1,0 +1,234 @@
+@charset "utf-8";
+/*
+  Template Name: Academic Education V2
+  Author: Ng'ethe Maina
+  Author URI: http://www.mradi.co.ke
+*/
+
+@import url("framework.css");
+/*
+  General Styles
+*/
+body {
+  color: #f9f9f9;
+  background-color: #06213f;
+}
+
+a { color: #55abda; }
+
+.rounded {
+  color: inherit;
+  background-color: #f9f9f9;
+}
+
+.row0,
+.row0 a {
+  color: #f9f9f9;
+  background-color: #06213f;
+}
+.row1 {
+  color: #979797;
+  background-color: #06213f;
+}
+.row1 a {
+  color: #f9f9f9;
+  background-color: inherit;
+}
+.row2,
+.row2 a {
+  color: #06213f;
+  background-color: inherit;
+}
+
+
+
+
+/*
+  #top-bar styles
+*/
+
+#top-bar {
+  padding: 10px 0 0 0;
+  text-align: right;
+  font-size: .8em;
+}
+
+#top-bar li {
+  display: inline;
+  margin-right: 3px;
+  padding-right: 8px;
+  border-right: #fff 1px solid;
+}
+#top-bar li:last-child {
+  margin-right: 0; padding-right: 0;
+  border: none;
+}
+
+/*
+  Header Styles
+*/
+#header #logo h1 {
+  margin: 0 0 8px 0; padding: 0;
+  font-size: 36px; line-height: 12px; font-variant: small-caps; font-style: normal;
+}
+
+#header #logo p { margin: 0; padding: 0; }
+
+#header form {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#header input,
+#header button {
+  display: block;
+  height: 30px;
+  border: none;
+}
+
+#header input {
+  width: 100%;   min-width: 250px;
+  padding: 5px 40px 5px 5px;
+  color: #979797;
+  background-color: #fff;
+}
+
+#header button {
+  position: absolute;
+  top: 0; right: 0;
+  width: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f9f9f9;
+  background-color: #55abda;
+}
+
+#header button em { display: none; }
+
+/*
+  Navigation Styles
+*/
+
+nav ul,
+nav ol {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+#main-nav .drop::after,
+#main-nav li li .drop::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; font-size: 10px; line-height: 10px;
+}
+
+#main-nav {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main-nav ul ul {
+  z-index: 1;
+  position: absolute;
+  width: 160px;
+}
+
+#main-nav ul ul ul { top: 0; left: 160px; }
+
+#main-nav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 30px 0 0; padding: 0;
+}
+#main-nav li:last-child { margin-right: 0; }
+
+#main-nav li li {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+#main-nav li a {
+  display: block;
+  padding: 0;
+}
+
+#main-nav li li a {
+  border: solid;
+  border-width: 0 0 1px 0;
+}
+
+#main-nav li li:last-child a { border-bottom: none; }
+
+#main-nav .drop { padding-left: 15px; }
+
+#main-nav li li a,
+#main-nav li li .drop {
+  display: block;
+  margin: 0; padding: 10px 15px;
+}
+#main-nav .drop::after,
+#main-nav li li .drop::after { content: "\f0d7"; }
+#main-nav .drop::after { top: 5px; left: 5px; }
+#main-nav li li .drop::after { top: 15px; left: 5px; }
+#main-nav ul ul { display: none; }
+#main-nav ul li:hover > ul { display: block; }
+
+#main-nav li a { color: inherit; }
+
+#main-nav .active a,
+#main-nav a:hover,
+#main-nav li:hover > a {
+  color: #55abda;
+  background-color: inherit;
+}
+
+#main-nav li li a,
+#main-nav .active li a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .6);
+  border-color: rgba(0, 0, 0, .6);
+}
+
+#main-nav li li:hover > a,
+#main-nav .active .active > a {
+  color: #fff;
+  background-color: #55abda;
+}
+
+
+/*
+  Round Corners
+*/
+.rounded,
+input,
+button,
+#header input { border-radius: 8px; }
+
+#header button { border-radius: 0 8px 8px 0; }
+
+#main-nav li li:last-child a { border-radius: 0 0 8px 8px; }
+#main-nav li li:first-child a { border-radius: 8px 8px 0 0; }
+
+
+/*
+  Media Queries
+*/
+@-ms-viewport{ width: device-width; }
+
+
+@media screen and (min-width: 978px) {
+  .wrapper { max-width: 978px; }
+}
+
+
+@media screen and (max-width:650px) {
+  .scrollable {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0; padding: 0 0 15px 0;
+    overflow: auto; overflow-x: scroll;
+  }
+}
