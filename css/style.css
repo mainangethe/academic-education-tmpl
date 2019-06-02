@@ -291,7 +291,16 @@ button,
   color: #fff;
   background-color: #06213f;
 }
+/*
+  Main Content Styles
+*/
+.container { padding: 20px 10px; }
 
+.container .heading {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.borderedbox { border-color: #d7d7d7; }
 /*
   Media Queries
 */
