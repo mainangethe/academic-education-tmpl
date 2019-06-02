@@ -212,6 +212,85 @@ button,
 #main-nav li li:last-child a { border-radius: 0 0 8px 8px; }
 #main-nav li li:first-child a { border-radius: 8px 8px 0 0; }
 
+/*
+  Homepage slider
+*/
+#slider {
+  position: relative; overflow: hidden;
+}
+#slider .rounded { padding: 9px; }
+#slider a,
+#slider ul,
+#slider img {
+  margin: 0; padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#slide-wrapper,
+#slide-wrapper figure,
+#slide-wrapper img {
+  display: block;
+  overflow: hidden;
+}
+#slide-wrapper figure,
+#slide-wrapper figure img { position: relative; }
+#slide-wrapper figure figcaption {
+  display: block;
+  position: absolute;
+  top: 50px; right: 25px;
+  width: 350px; height: 200px;
+  margin: 0; padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#slide-wrapper figure figcaption p {
+  margin: 0; padding: 0;
+  line-height: 1.6em;
+}
+
+#slide-wrapper #slide-tabs {
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+}
+#slider #slide-tabs li {
+  display: inline-block;
+  float: left;
+}
+#slider #slide-tabs li a {
+  display: block;
+  width: 192px; min-height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid;
+  border-width: 0 0 1px 1px;
+  font-weight: bold; text-align: center; text-transform: uppercase;
+}
+#slider #slide-tabs li:last-child a { border-width: 0 1px 1px 1px; }
+#slide-wrapper figcaption { border-radius: 8px; }
+#slide-wrapper figure img,
+#slide-wrapper figure .view:hover::before { border-radius: 8px 8px 0 0; }
+#slider #slide-tabs li:first-child a { border-radius: 0 0 0 8px; }
+#slider #slide-tabs li:last-child a { border-radius: 0 0 8px 0; }
+
+#slide-wrapper figure figcaption {
+  color: #666;
+  background-color: rgba(255, 255, 255, .8);
+}
+#slide-wrapper figure figcaption:hover { background-color: rgba(255, 255, 255, 1); }
+#slider #slide-tabs li a {
+  color: #666;
+  background-color: #dedacb;
+  border-color: #666;
+}
+#slider #slide-tabs li a:hover,
+#slider #slide-tabs li.active a {
+  color: #fff;
+  background-color: #06213f;
+}
 
 /*
   Media Queries
@@ -221,6 +300,14 @@ button,
 
 @media screen and (min-width: 978px) {
   .wrapper { max-width: 978px; }
+}
+
+@media screen and (min-width: 180px) and (max-width: 900px) {
+  .wrapper{ max-width: 95%; }
+
+  #topbar { text-align: center; }
+
+
 }
 
 
