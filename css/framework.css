@@ -10,7 +10,7 @@ body {
   margin: 0; padding: 0;
   font-size: 14px; line-height: 1.4em;
 }
-
+.right { text-align: right; }
 .nospace {
   margin: 0; padding: 0;
   list-style: none;
@@ -39,7 +39,8 @@ a {
   text-decoration: none;
 }
 
-.fl_left { float: left; }
+.fl_left,
+.imgl { float: left; }
 .fl_right { float: right; }
 
 img {
@@ -49,6 +50,10 @@ img {
   line-height: normal;
   vertical-align: middle;
   box-sizing: border-box;
+}
+.imgl{
+  margin: 0 15px 10px 0;
+  clear: left;
 }
 
 /*
@@ -138,6 +143,7 @@ nav {
 /*
   Grid Styles
 */
+.one_half,
 .one_quarter {
   display: inline-block;
   float: left;
@@ -151,7 +157,10 @@ nav {
   clear: left;
 }
 
-.one_quarter { width: 22.69938650306748; }
+.one_quarter { width: 22.69938650306748%; }
+
+.one_half,
+.two_quarter { width: 48.46625766871166%; }
 /*
   Spacing Styles
 */
