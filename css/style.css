@@ -301,6 +301,7 @@ button,
 .container { padding: 20px 10px; }
 
 .container h2,
+.container h6,
 .heading {
   padding-bottom: 8px;
   border-bottom: 1px solid #d7d7d7;
@@ -311,6 +312,22 @@ button,
   border-bottom: 1px solid #d7d7d7;
 }
 .listing li:last-child { margin-bottom: 0; }
+
+.mediacontainer {
+  position: relative;
+  width: 100%;
+}
+.mediacontainer,
+.mediacontainer iframe {
+  display: block;
+  margin: 0; padding: 0;
+}
+
+/*
+  Sidebar styles
+*/
+.sidebar .sdbar_holder { margin-bottom: 50px; }
+sidebar .sdbar_holder:last-child { margin-bottom: 0; }
 /*
   Media Queries
 */

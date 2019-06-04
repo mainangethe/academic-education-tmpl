@@ -15,7 +15,6 @@ body {
   margin: 0; padding: 0;
   list-style: none;
 }
-
 .borderedbox {
   padding: 5px;
   border: 1px solid;
@@ -43,7 +42,8 @@ a {
 .imgl { float: left; }
 .fl_right { float: right; }
 
-img {
+img,
+video {
   width: auto; max-width: 100%; height: auto;
   margin: 0; padding: 0;
   border: none;
@@ -135,7 +135,8 @@ figcaption,
 figure,
 header,
 main,
-nav {
+nav,
+video {
   display: block;
   margin: 0; padding: 0;
 }
