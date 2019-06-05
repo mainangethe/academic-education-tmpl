@@ -209,7 +209,9 @@ nav ol {
 .rounded,
 input,
 button,
-#header input { border-radius: 8px; }
+#header input,
+#slide-wrapper figcaption,
+#twitter { border-radius: 8px; }
 
 #header button { border-radius: 0 8px 8px 0; }
 
@@ -352,6 +354,18 @@ button,
   top: 0; left: 0;
   width: 80px; height: 80px;
 }
+
+#twitter {
+  display: block;
+  padding: 15px;
+
+  color: #fff;
+  background-color: #06213f;
+}
+
+#twitter div { padding: 25px 0; }
+#twitter div:first-child { border-right: 2px solid #fff; }
+
 /*
   Sidebar styles
 */

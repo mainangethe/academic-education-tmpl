@@ -10,6 +10,9 @@ body {
   margin: 0; padding: 0;
   font-size: 14px; line-height: 1.4em;
 }
+
+ .bold { font-weight: bold; }
+ .center { text-align: center; }
 .right { text-align: right; }
 .nospace {
   margin: 0; padding: 0;
@@ -145,7 +148,8 @@ video {
   Grid Styles
 */
 .one_half,
-.one_quarter {
+.one_quarter,
+.three_quarter {
   display: inline-block;
   float: left;
   margin: 0 0 0 3.06748466257669%;
@@ -162,6 +166,8 @@ video {
 
 .one_half,
 .two_quarter { width: 48.46625766871166%; }
+
+.three_quarter { width: 74.23312883435584%; }
 /*
   Spacing Styles
 */
