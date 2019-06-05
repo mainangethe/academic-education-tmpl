@@ -375,6 +375,8 @@ button,
 #twitter div { padding: 25px 0; }
 #twitter div:first-child { border-right: 2px solid #fff; }
 
+.schoolinks a:hover { text-decoration: underline; color: #979797; }
+
 /*
   Sidebar styles
 */
