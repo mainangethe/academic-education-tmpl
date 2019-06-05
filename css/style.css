@@ -43,6 +43,10 @@ a { color: #55abda; }
   color: #979797;
   background-color: inherit;
 }
+.row4 {
+  color: #979797;
+  background-color: inherit;
+}
 
 
 
@@ -371,6 +375,80 @@ button,
 */
 .sidebar .sdbar_holder { margin-bottom: 50px; }
 .sidebar .sdbar_holder:last-child { margin-bottom: 0; }
+
+/*
+  Footer Styles
+*/
+#footer { padding: 10px; }
+
+#footer .socialmedia { margin-bottom: 10px; }
+#footer .socialmedia li { margin: 0 10px 0 0; }
+#footer .socialmedia li:last-child { margin-right: 0; }
+#footer .socialmedia a { border: 1px solid; }
+
+#footer form {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+#footer legend { 
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#footer input,
+#footer button {
+  display: block;
+  height: 30px;
+  border: none;
+}
+#footer input { 
+  width: 100%;
+  min-width: 250px;
+  padding: 5px 40px 5px 5px;
+  
+  color: #fff;
+  background-color: #979797;
+}
+#footer button {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 35px;
+  font-size: 16px;
+  cursor: pointer;
+
+  color: #f9f9f9;
+  background-color: #55abda;
+}
+#footer em { display: none; }
+
+/*
+  Social Media Icon styles
+*/
+.socialmedia { margin: 0; padding: 0; list-style: none; }
+.socialmedia li { 
+  display: inline-block;
+  margin: 0 2px 0 0; padding: 0;
+  line-height: normal;
+}
+.socialmedia li:last-child { margin-right: 0; }
+
+.socialmedia a {
+  display: block;
+  width: 40px; height: 40px;
+  font-size: 20px; line-height: 40px; text-align: center;
+
+  color: #fff;
+  background-color: #ccc;
+}
+
+.socialmedia-twitter:hover { background-color: #00acee; }
+.socialmedia-facebook:hover { background-color: #3b5998; }
+.socialmedia-linkedin:hover { background-color: #0e76a8; }
+.socialmedia-instagram:hover { background-color: #833ab4 ;}
+.socialmedia-rss:hover { background-color: #ee802f; }
+
+
 /*
   Media Queries
 */
