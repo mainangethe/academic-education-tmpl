@@ -43,6 +43,7 @@ a {
 
 .fl_left,
 .imgl { float: left; }
+
 .fl_right { float: right; }
 
 img,
@@ -124,7 +125,8 @@ h6,
 #main-nav,
 #slider,
 .container,
-#footer {
+#footer,
+#copyright {
   display: block;
   width: 100%;
   box-sizing: border-box;

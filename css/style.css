@@ -47,6 +47,11 @@ a { color: #55abda; }
   color: #979797;
   background-color: inherit;
 }
+.row5,
+.row5 a {
+  color: #55abda;
+  background-color: #06213f;
+}
 
 
 
@@ -447,6 +452,11 @@ button,
 .socialmedia-linkedin:hover { background-color: #0e76a8; }
 .socialmedia-instagram:hover { background-color: #833ab4 ;}
 .socialmedia-rss:hover { background-color: #ee802f; }
+
+/*
+  Copyright Styles
+*/
+#copyright p { margin: 0; padding: 0; }
 
 
 /*
