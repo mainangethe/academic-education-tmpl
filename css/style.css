@@ -220,9 +220,12 @@ input,
 button,
 #header input,
 #slide-wrapper figcaption,
-#twitter { border-radius: 8px; }
+#twitter,
+.pagination a,
+.pagination strong { border-radius: 8px; }
 
-#header button { border-radius: 0 8px 8px 0; }
+#header button,
+#footer button { border-radius: 0 8px 8px 0; }
 
 #main-nav li li:last-child a { border-radius: 0 0 8px 8px; }
 #main-nav li li:first-child a { border-radius: 8px 8px 0 0; }
@@ -460,6 +463,51 @@ button,
 */
 #copyright p { margin: 0; padding: 0; }
 
+/*
+  Gallery Styles
+*/
+#gallery {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#gallery figure figcaption {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+#gallery li { margin-bottom: 30px; }
+#gallery li a { display: block; }
+
+/*
+  Pagination Styles
+*/
+.pagination {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 2px 0 0;
+}
+  .pagination li:last-child { margin-right: 0; }
+
+.pagination a,
+.pagination strong {
+  display: block;
+  padding: 8px 11px;
+  border: 1px solid #d7d7d7;
+  font-weight: normal;
+  background-clip: padding-box;
+}
+
+.pagination .current strong {
+  color: #fff;
+  background-color: #06213f;
+}
 
 /*
   Media Queries
