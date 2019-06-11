@@ -6,6 +6,8 @@
 */
 
 @import url("framework.css");
+
+@import url("../js/nivo-lightbox/nivo-lightbox.min.css");
 /*
   General Styles
 */
