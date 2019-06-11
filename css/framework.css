@@ -112,6 +112,8 @@ h6,
   font-size: 16px; line-height: normal; font-weight: normal; font-style: normal;
 }
 
+address { font-style: normal; font-weight: normal; }
+
 .wrapper {
   display: block;
   margin: 0 auto 20px;
@@ -138,6 +140,7 @@ h6,
   HTML 5 Overrides
 */
 address,
+article,
 figcaption,
 figure,
 header,
@@ -154,6 +157,7 @@ video {
 .one_half,
 .one_third,
 .one_quarter,
+.two_quarter,
 .three_quarter {
   display: inline-block;
   float: left;
@@ -173,6 +177,7 @@ video {
 .two_quarter { width: 48.46625766871166%; }
 
 .three_quarter { width: 74.23312883435584%; }
+
 /*
   Spacing Styles
 */

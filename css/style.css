@@ -480,6 +480,16 @@ button,
 }
 #gallery li { margin-bottom: 30px; }
 #gallery li a { display: block; }
+/*
+  Portfolio Styles
+*/
+#portfolio {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#portfolio li,
+#portfolio img { margin-bottom: 30px; }
 
 /*
   Pagination Styles
