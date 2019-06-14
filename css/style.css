@@ -391,6 +391,34 @@ button,
 .sidebar .sdbar_holder { margin-bottom: 50px; }
 .sidebar .sdbar_holder:last-child { margin-bottom: 0; }
 
+.sidebar nav {
+  display: block;
+  width: 100%;
+}
+.sidebar nav li { margin: 0 0 3px 0; padding: 0; }
+.sidebar nav a {
+  display: block;
+  position: relative;
+  margin: 0;  padding: 5px 10px 5px 15px;
+  text-decoration: none;
+  border: solid; border-width: 0 0 1px 0;
+}
+  .sidebar nav a::after {
+    top: 9px; left: 5px;
+    font-family: "Font Awesome 5 Free";
+    content:"\f101";
+  }
+.sidebar nav ul ul a { padding-left: 35px; }
+  .sidebar nav ul ul a:after { left: 25px; }
+.sidebar nav ul ul ul a { padding-left:55px; }
+  .sidebar nav ul ul ul a:after { left: 45px; }
+
+.container .sidebar nav a {
+  color: inherit;
+  border-color: #d7d7d7;
+}
+  .container .sidebar nav a:hover { color: #55abda; }
+
 /*
   Footer Styles
 */

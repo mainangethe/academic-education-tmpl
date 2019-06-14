@@ -162,6 +162,7 @@ video {
 */
 .one_half,
 .one_third,
+.two_third,
 .one_quarter,
 .two_quarter,
 .three_quarter {
@@ -181,7 +182,7 @@ video {
 .one_third { width: 31.28834355828221%; }
 .one_half,
 .two_quarter { width: 48.46625766871166%; }
-
+.two_third { width: 65.641717791411%; }
 .three_quarter { width: 74.23312883435584%; }
 
 /*
