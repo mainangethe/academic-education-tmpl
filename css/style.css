@@ -6,8 +6,8 @@
 */
 
 @import url("framework.css");
-
 @import url("../js/nivo-lightbox/nivo-lightbox.min.css");
+
 /*
   General Styles
 */
@@ -54,8 +54,6 @@ a { color: #55abda; }
   color: #55abda;
   background-color: #06213f;
 }
-
-
 
 
 /*
@@ -222,6 +220,9 @@ input,
 button,
 #header input,
 #slide-wrapper figcaption,
+.avatar,
+#comments li,
+.socialmedia a,
 #twitter,
 .pagination a,
 .pagination strong { border-radius: 8px; }
@@ -290,7 +291,7 @@ button,
   font-weight: bold; text-align: center; text-transform: uppercase;
 }
 #slider #slide-tabs li:last-child a { border-width: 0 1px 1px 1px; }
-#slide-wrapper figcaption { border-radius: 8px; }
+/* #slide-wrapper figcaption { border-radius: 8px; } */
 #slide-wrapper figure img,
 #slide-wrapper figure .view:hover::before { border-radius: 8px 8px 0 0; }
 #slider #slide-tabs li:first-child a { border-radius: 0 0 0 8px; }
@@ -315,7 +316,9 @@ button,
   Main Content Styles
 */
 .container { padding: 20px 10px; }
+.container section { margin-bottom: 50px; }
 
+.container h1,
 .container h2,
 .container h6,
 .heading {
@@ -434,6 +437,11 @@ button,
 }
 #footer em { display: none; }
 
+#footer .socialmedia a {
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .2);
+}
+
 /*
   Social Media Icon styles
 */
@@ -520,6 +528,105 @@ button,
   color: #fff;
   background-color: #06213f;
 }
+
+/*
+  Tables
+*/
+table {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid #cecece;
+  border-collapse: collapse;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+table,
+th { table-layout: auto; }
+
+th,
+td { padding: 10px 8px; }
+
+tr {
+  color: inherit;
+  background-color: #d4d4d4;
+}
+  tr:nth-child(odd) {
+    color: inherit;
+    background-color: #fff;
+  }
+th {
+  color: #fff;
+  background-color: #373737;
+}
+
+td { border-width: 0 1px; color: #686868; }
+
+table a { background-color: inherit; }
+
+/*
+  Comments
+*/
+#comments ul {
+  margin: 0 0 40px 0; padding: 0;
+  list-style: none;
+}
+#comments li { margin: 0 0 10px 0; padding: 15px; }
+#comments .avatar {
+  float: right;
+  margin: 0 0 10px 10px; padding: 3px;
+  border: 1px solid;
+}
+#comments address { font-weight: bold; }
+#comments time { font-size: smaller; }
+#comments .comment-content {
+  display: block;
+  margin: 0; padding: 0;
+}
+#comments .comment-content p { margin: 10px 5px 10px 0; padding: 0; }
+#comments form {
+  display: block;
+  width: 100%;
+}
+#comments input,
+#comments textarea { padding: 10px; }
+#comments textarea { overflow: auto; }
+#comments input { width: 100%; }
+#comments textarea { width: 97%; }
+#comments div { margin-bottom: 15px; }
+#comments input[type="submit"],
+#comments input[type="reset"] {
+  display: inline-block;
+  width: auto; min-width: 150px;
+  margin: 0;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+
+#comments .avatar,
+#comments input,
+#comments textarea { border-color: #d7d7d7; }
+
+label span { 
+  color: #ff0000; 
+  background-color: inherit;
+}
+
+#comments li,
+#comments input[type="submit"],
+#comments input[type="reset"] {
+  color: inherit;
+  background-color: #fbfbfb;
+}
+#comments li:nth-child(odd) {
+  color: inherit;
+  background-color: #fff;
+}
+#comments a { background-color: inherit; }
 
 /*
   Media Queries

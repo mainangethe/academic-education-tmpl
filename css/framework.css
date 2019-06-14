@@ -44,7 +44,8 @@ a {
 .fl_left,
 .imgl { float: left; }
 
-.fl_right { float: right; }
+.fl_right,
+.imgr { float: right; }
 
 img,
 video {
@@ -55,9 +56,13 @@ video {
   vertical-align: middle;
   box-sizing: border-box;
 }
-.imgl{
+.imgl {
   margin: 0 15px 10px 0;
   clear: left;
+}
+.imgr {
+  margin: 0 0 10px 15px;
+  clear: right;
 }
 
 /*
@@ -146,6 +151,7 @@ figure,
 header,
 main,
 nav,
+section,
 video {
   display: block;
   margin: 0; padding: 0;
